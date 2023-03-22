@@ -1,0 +1,49 @@
+/* Landing Page */
+
+.sub {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub > div {
+  width: 65%;
+}
+
+.sub > div > p {
+  font-size: 1.8rem;
+}
+
+p.sub-text {
+  font-size: 1.8rem;
+  letter-spacing: 1.8px;
+}
+
+@media only screen and (max-width: 992px) {
+  #h1-mobile {
+    font-size: 4.6rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #h1-mobile-two {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #h1-mobile,
+  #h1-mobile-two {
+    font-size: 3.6rem;
+  }
+  .sub > div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #h1-mobile-two {
+    font-size: 2.8rem;
+  }
+}

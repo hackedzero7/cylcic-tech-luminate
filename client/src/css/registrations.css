@@ -1,0 +1,230 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  background: var(--dark);
+  overflow-x: hidden !important;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --light: #f9f9f9;
+  --green: #84b280;
+  --dark: #101010;
+  --orange: #f38611;
+  --gray: #a0a0a0;
+}
+.forms_main_div {
+  width: 100%;
+  height: 100vh;
+  margin-top: 25px;
+}
+.reg_right_side {
+  height: 100vh;
+  background: url("../assets/forms_right_banner.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formlogo {
+  max-width: 30rem;
+  display: block;
+  margin: 0 auto;
+}
+.form_card {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form_heading {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+
+  color: #ffffff;
+}
+.form_card form label {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: #e9e9e9;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+.form_card form input {
+  width: 100%;
+  background: #1e1e20;
+  border-radius: 12px;
+  height: 5rem;
+  border: none;
+  padding-left: 1.6rem;
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 1.8rem;
+}
+.form_card form input:focus {
+  outline: 0.1px solid var(--orange);
+}
+.passwrod_section input[type="password"]:focus {
+  outline: 0.1px solid var(--orange);
+}
+.form_card form input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+.form_card form input[type="submit"] {
+  width: 50%;
+  background: var(--orange);
+  border-radius: 12px;
+  height: 6rem;
+  display: block;
+  border: none;
+  padding-left: 1.6rem;
+  font-size: 1.6rem;
+  margin-bottom: 2.2rem;
+  color: white;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.form_card form input[type="submit"]:hover {
+  opacity: 0.8;
+}
+.form-control:focus {
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+}
+
+/*login page*/
+.login_desc {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  /* identical to box height */
+
+  color: #555555;
+  margin-bottom: 3rem;
+}
+.eyeicon {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  cursor: pointer;
+  z-index: 99 !important;
+  font-size: 1.8rem;
+  color: #6d6d6e;
+}
+.passwrod_section {
+  position: relative;
+}
+.forgot_link_sec {
+  position: relative;
+  margin-bottom: 7rem;
+}
+.forgotpass_link {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  display: block;
+
+  color: #555555;
+  margin-bottom: 3rem;
+  right: 0;
+  position: absolute;
+  text-align: right;
+  text-decoration: none;
+}
+.forgotpass_link:hover,
+.form_last_link a:hover {
+  color: var(--orange);
+}
+.form_last_link {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  /* identical to box height */
+  display: block;
+  text-align: center;
+  color: #555555;
+  margin-top: 3rem;
+  position: relative;
+  text-decoration: none;
+}
+.form_last_link a {
+  margin-left: 2rem;
+  color: white;
+  text-decoration: none;
+}
+/*responsive end*/
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 57.5%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 55.5%;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form_card {
+    max-width: 80% !important;
+  }
+  .formlogo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .reg_right_side {
+    display: none;
+  }
+  .forms_main_div {
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 45.5%;
+  }
+  .form_card {
+    /*width:50rem;*/
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .form_card {
+    /*width:45rem;*/
+  }
+}
